@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+    --primary-color: #F0F0F0;
+
+    --primary-bg-color: #32273B;
+    --secondary-bg-color: #4E3366;
+    --border-color: #643091;
+
+    --title-color: #f0f0f0;
+    --text-color: #9A9A9C;
+    --link-color: #9A9A9C;
+    --icon-color: #C7C8C9;
+}
+body {
+    background: var(--primary-bg-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+a {
+    text-decoration: none;
+    color: var(--link-color);   
+}

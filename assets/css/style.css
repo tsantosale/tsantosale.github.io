@@ -1,0 +1,345 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h2, h3 {
+    font-size: 2rem;
+}
+h4 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+h1, h2, h3, h4 {
+    font-family: 'League Spartan', sans-serif;
+    text-transform: uppercase;
+    color: var(--title-color);
+    font-weight: 200;
+} 
+.buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+}
+.btn {
+    background: transparent;
+    border: none;
+    padding: 0.875rem 1.5rem;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn__1 {
+    border-radius: 3.125rem;
+    border: 4px solid var(--border-color);
+}
+.btn__1:hover {
+    background: linear-gradient(135deg, var(--primary-bg-color), var(--secondary-bg-color));
+}
+.btn__2:hover {
+    font-size: 1.2rem;
+}
+.item {
+    list-style-type: disc;
+    list-style-position: inside; 
+}
+
+/*Menu*/
+.header__nav {
+    border-bottom: .5px solid var(--border-color);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+}
+.header__nav a {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.nav__desktop__list {
+    display: none;
+}
+/*Informações Header*/
+.main__content1 {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 1rem 2.5rem 1rem;
+}
+.main__content1 h1 {
+    margin-bottom: 1.5rem;
+}
+.menu__social {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+.menu__icon { 
+    font-size: 1.5rem;
+}
+
+/*Conhecimento nas principais tecnologias*/
+.technologies {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 1rem;
+    gap: 1.25rem;
+    background: var(--secondary-bg-color);
+    margin-top: 1.5rem;
+    
+}
+.technologies h2 {
+    text-transform: none;
+    text-align: start;
+    margin-bottom: 1.5rem;
+}
+.technologies__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+.technologies__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    width: 4.8rem;
+    height: 4.8rem;
+    aspect-ratio: 1/1;
+    border: 1px solid var(--border-color);
+    border-radius: 50rem;
+}
+.technologies__logo {
+    height: 2.4rem;
+}
+.bi-bootstrap {
+    font-size: 2.5rem;
+}
+
+/*Projetos*/
+.projects {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 1rem;
+    gap: 1rem;
+}
+.projects h3 {
+    align-self: center;
+}
+.projects__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.projects__image {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+}
+.projects__information {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.projects__information h4,
+.projects__information p {
+  margin-top: 1.5rem;
+}
+.projects_buttons .btn__1 {
+    width: 150px;
+}
+
+/*Sobre*/
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2.5rem 1rem;
+}
+.about__information1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.about__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+.about__content h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.about__content p {
+    margin-bottom: 1rem;
+}
+.about__buttons {
+    white-space: nowrap;
+}
+.row1, .row2, .col2 {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.accordion__header {
+    width: 100%;
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem 0.25rem 0rem 0rem;
+    background: transparent;
+    text-align: left;
+    margin-top: 1rem;
+}
+.accordion__header span {
+    font-size: 1.2rem;
+}
+.accordion__header span, 
+.bi-caret-down-fill
+{
+    color: var(--title-color);
+}
+.accordion__body {
+    display: none;
+    transition: all 0.3s ease;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border: 1px solid var(--border-color);
+}
+.accordion__items.active .accordion__body {
+    display: block;
+  }  
+.accordion_subtitle {
+   font-weight: 600;
+}
+
+/*Contato*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0rem 1rem;
+}
+
+/*Rodapé*/
+footer p {
+    font-size: .875rem;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+    
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    .main__content1, .projects, .about {
+        padding: 8rem 6rem 4rem 6rem;
+    }
+    
+    .main__content1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .technologies {
+        width: 100%;
+        padding: 5rem 6rem 4rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 4rem;
+    }
+    h3 {
+    font-size: 3rem;
+    }
+    h4 {
+        font-size: 2.5rem;
+    }
+    .header__nav {
+        padding: 1.5rem 4rem;
+    }
+    .header__nav_desktop {
+        display: flex;
+        justify-content: center;
+      }
+    
+    .nav__desktop__list {
+        display: flex;
+        gap: 2rem;
+    }
+    
+
+    .projects__container {
+        flex-direction: row;
+        align-items: start;
+    }
+    .projects__image {
+        width: 50%;
+    }
+    .projects__content {
+        width: 50%;
+        padding-left: 4rem;
+        justify-content: center;
+    }
+    .about__information1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+    .about__image {
+        width: 500px;
+        height: 500px;
+    }
+    .about__content {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-left: 6rem;
+    }
+    .about__content h3 {
+        text-align: start;
+    }    
+    .about__information2 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-content: center;
+        align-items: start;
+        gap: 5rem;
+    } 
+}

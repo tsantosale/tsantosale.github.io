@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    list-style: none;
+}
+h1, h2, h3, h4 {
+    color: var(--title-color);
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+}
+h3 {
+    font-size: 2rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+main {
+    padding: 1.5rem 2rem;
+}
+a[href]:hover {
+    cursor: pointer;
+}
+
+/**Menu**/
+nav {
+    display:none;
+}
+
+/** Informações**/
+.information__image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.information__image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+.information__text {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.information__text h2 {
+    margin: 1.5rem 0rem 1.5rem 0rem;
+}
+
+/**Formação**/
+.graduated {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-bottom: 2.5rem;
+}
+/** Cursos **/
+.courses {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+.courses span {
+    color: var(--title-color);
+}
+/** Carreira**/
+.career {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+.career__description {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.about__item {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+/**Sobre**/
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin: 2.5rem 0rem;
+}
+/**Contato**/
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.menu__social {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+/**Footer**/
+footer {
+    padding: 1.5rem 2rem; 
+}
+
+/**Responsividade**/
+@media (min-width: 1200px) {
+    h4 {
+        font-size: 1.8rem;
+    } 
+    p, span, li {
+        font-size: 1.5rem;
+    }
+    nav {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: start;
+        gap: 5rem;
+        padding: 1.5rem 4rem;
+        cursor: pointer;
+    
+        border-bottom: 1px solid var(--border-color);
+    }
+    nav a {
+        text-transform: uppercase;
+    }
+
+    main {
+        padding: 1.5rem 4rem;
+    }
+    .information {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5rem;
+    }
+    .information__image img {
+        width: 400px;
+        height: 400px;
+        border-radius: 20px;
+        overflow: hidden;
+        object-fit: cover;
+        object-position: center;
+    }
+    .information__text {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .information__text h2 {
+        margin:0;
+    }
+}
