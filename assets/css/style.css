@@ -125,8 +125,9 @@ h1, h2, h3, h4 {
 .technologies__logo {
     height: 2.4rem;
 }
-.bi-bootstrap {
+.technologies__item i {
     font-size: 2.5rem;
+    color: #C7C8C9;
 }
 
 /*Projetos*/
@@ -146,6 +147,10 @@ h1, h2, h3, h4 {
 }
 .projects__image {
     width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center; 
     border-radius: 0.5rem;
     margin-top: 1.5rem;
 }
@@ -157,6 +162,9 @@ h1, h2, h3, h4 {
 .projects__information h4,
 .projects__information p {
   margin-top: 1.5rem;
+}
+.projects__technologies {
+    padding: 1rem 0rem;
 }
 .projects_buttons .btn__1 {
     width: 150px;
@@ -302,8 +310,6 @@ footer p {
         display: flex;
         gap: 2rem;
     }
-    
-
     .projects__container {
         flex-direction: row;
         align-items: start;
@@ -337,9 +343,31 @@ footer p {
     }    
     .about__information2 {
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        justify-content: center;
-        align-items: start;
-        gap: 5rem;
-    } 
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+    .row1 h3 {
+        padding-bottom: 1rem;
+    }
+    .row2 h3 {
+        padding-bottom: 1rem;
+    }
+    .col1 {
+        margin-left: -6rem;
+        width: 100%;
+    }
+    #accordion {
+        width: 100%;
+        max-width: 800px;
+        text-align: left;
+    }
+    .accordion__body {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease;
+    }
+
+    .accordion__items.active .accordion__body {
+        max-height: 800px; /* ou o suficiente para o conteúdo completo */
+    }
 }
