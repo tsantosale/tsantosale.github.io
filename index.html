@@ -1,288 +1,253 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alessandra Torres | Portifólio</title>
 
-    <meta property="og:title" content="Alessandra Torres | Portfólio" />
-    <meta property="og:description" content="Desenvolvedora Front-End com projetos em HTML, CSS e JavaScript." />
-    <meta property="og:image" content="https://github.com/tsantosale/tsantosale.github.io/blob/main/assets/images/img-meta.png"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <section class="menu">
+      <div class="menuContact">
+        <a
+          href="https://api.whatsapp.com/send?phone=5519993344152&text=Oi%2C%20Alessandra!%20Seu%20portf%C3%B3lio%20%C3%A9%20muito%20legal.%20Vamos%20conversar%3F"
+          ><i class="bi bi-whatsapp"></i
+        ></a>
+        <a
+          href="mailto:tsantos.ale@gmail.com?subject=Contato%20via%20portfólio&body=Olá%20Alessandra%2C%20gostaria%20de%20conversar%20sobre..."
+          ><i class="bi bi-envelope"></i
+        ></a>
+        <a href="https://github.com/tsantosale"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/alessandra-torres-43661157/"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+      </div>
+    </section>
 
-    <title>Alessandra Torres | Portifolio</title>
-    <meta nome="description" content="Portifolio Front End desenvolvedora Alessandra Torres">
+    <section class="hi">
+      <div class="presentation">
+        <img
+          class="about__image"
+          src="./assets/images/foto-perfil-nova.jpeg"
+          alt="Foto de perfil"
+        />
+        <h1>Olá, eu sou a Alessandra!</h1>
+        <p class="subtitle">Desenvolvedora Front-End</p>
+        <i class="bi bi-chat-square-heart"></i>
+        <p class="textDescription">
+          Gosto de transformar ideias em soluções! No front-end consigo conectar
+          o visual com a funcionalidade e entregar soluções que agregam valor no
+          dia a dia de quem acessa.
+        </p>
+      </div>
+    </section>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <header class="header">
-        <nav class="header__nav">
-           
-            <a href="https://api.whatsapp.com/send?phone=5519993344152&text=Oi%2C%20Alessandra!%20Seu%20portf%C3%B3lio%20%C3%A9%20muito%20legal.%20Vamos%20conversar%3F">Fale comigo</a>
-            <ul class="nav__desktop__list">
-              <li class="nav__desktop__item"><a>Home</a></li>
-              <li class="nav__desktop__item"><a href="#projetos">Projetos</a></li>
-              <li class="nav__desktop__item"><a href="#sobre">Sobre</a></li>
-            </ul>
-            <a href="curriculo.html">Currículo</a>
-        </nav>
-    </header>
+    <section class="technologies">
+      <h2 class="titleBackgroundColor2">
+        Conhecimento nas principais tecnologias do mercado
+      </h2>
+      <ul class="technologies__list">
+        <li class="technologies__item">
+          <img
+            class="technologies__logo"
+            src="./assets/images/css.png"
+            alt="Logo CSS"
+          />
+        </li>
+        <li class="technologies__item">
+          <img
+            class="technologies__logo"
+            src="./assets/images/JS.png"
+            alt="Logo Javascript"
+          />
+        </li>
+        <li class="technologies__item"><i class="bi bi-bootstrap"></i></li>
+        <li class="technologies__item"><i class="bi bi-github"></i></li>
+      </ul>
+    </section>
 
-    <main class="main">
-        <div class="main__content1">
-            <h1><b>Criatividade Estratégica &</b></br>Desenvolvimento Front-end</h1>
-            <p>Alessandra Torres, Botucatu-SP, Desenvolvedora Front-end.</p>
-
-            <ul class="menu__social">
-                <li>
-                  <a class="menu__link" href="https://github.com/tsantosale" target="_blank">
-                    <i class="menu__icon bi bi-github"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="menu__link" href="https://www.linkedin.com/in/alessandra-torres-43661157/" target="_blank">
-                    <i class="menu__icon bi bi-linkedin"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="menu__link" href="https://www.instagram.com/ale.storres/" target="_blank">
-                    <i class="menu__icon bi bi-instagram"></i>
-                  </a>
-                </li>
-              </ul>
-        </div>
-
-        <section class="technologies">
-          <h2>Conhecimento nas principais tecnologias do mercado</h2>
-            <ul class="technologies__list">
-              <li class="technologies__item">
-                <img class="technologies__logo" src="./assets/images/css.png" alt="Logo CSS">
-              </li>
-              <li class="technologies__item">
-                <img class="technologies__logo" src="./assets/images/JS.png" alt="Logo Javascript">
-              </li>
-              <li class="technologies__item"><i class="bi bi-bootstrap"></i></li>
-              <li class="technologies__item"><i class="bi bi-github"></i></li>
-            </ul>
-        </section>
-
-        <section id="projetos" class="projects section">
-          <h3>Projetos</h3>
-           <!--Receitas Preferidas-->
-          <div class="projects__container">
-            <img class="projects__image" src="./assets/images/Mockup-page-receitas-preferidas-desktop.png">
-            <div class="projects__content">
-              <div class="projects__information">
-                <h4>Receitas Preferidas</h4>
-                <p>Uma página estática e bem organizada para apresentar minhas receitas preferidas, com foco em uma navegação simples e visual agradável.</p>
-                <ul class="projects__list">
-                  <li class="projects__item item">Estrutura limpa e semântica com HTML5;</li>
-                  <li class="projects__item item">Estilização com CSS, incluindo responsividade e desenvolvimento mobile first;</li>
-                  <li class="projects__item item"> Design intuitivo e acolhedor, pensado para leitura fluida e fácil manutenção.</li>
-                </ul>
-              </div>
-              <div class="projects__technologies">
-                <ul class="technologies__list">
-                <li class="technologies__item">
-                  <img class="technologies__logo" src="./assets/images/css.png" alt="Logo CSS">
-                </li>
-                <li class="technologies__item">
-                  <img class="technologies__logo" src="./assets/images/JS.png" alt="Logo Javascript">
-                </li>
-                </ul>
-              </div>
-              <div class="projects_buttons buttons">
-                <div class="btn btn__1">
-                  <span><a href="https://tsantosale.github.io/receitas-preferidas/">Prévia</a></span>
-                  <i class="bi bi-arrow-up-right"></i>
-                </div>  
-                <div class="btn btn__2">
-                  <span><a href="https://github.com/tsantosale/receitas-preferidas">Repositório</a></span>
-                </div>  
-              </div>
-            </div>
-          </div>
-          <!--Calculadora Emissões C02-->
-          <div class="projects__container">
-              <img class="projects__image" src="./assets/images/calculadora-3.png">
-              <div class="projects__content">
-                <div class="projects__information">
-                  <h4>Calculadora Emissão CO2</h4>
-                  <p>Ferramenta interativa que estima a emissão de CO2 associada ao consumo de carne e mostra o impacto positivo de adotar uma alimentação vegana.</p>
-                  <ul class="projects__list">
-                    <li class="projects__item item">Criatividade na aplicação de dados públicos para comunicar o impacto climático da alimentação;</li>
-                    <li class="projects__item item">Layout responsivo e acolhedor com HTML e CSS, pensado para facilitar a compreensão;</li>
-                    <li class="projects__item item">Lógica em JavaScript para exibir resultados personalizados com base no consumo informado.</li>
-                  </ul>
-                </div>
-                <div class="projects__technologies">
-                  <ul class="technologies__list">
-                  <li class="technologies__item">
-                    <img class="technologies__logo" src="./assets/images/css.png" alt="Logo CSS">
-                  </li>
-                  <li class="technologies__item">
-                    <img class="technologies__logo" src="./assets/images/JS.png" alt="Logo Javascript">
-                  </li>
-                  </ul>
-                </div>
-                <div class="projects_buttons buttons">
-                  <div class="btn btn__1">
-                    <span><a href="https://tsantosale.github.io/calculadora-salve-natureza/">Prévia</a></span>
-                    <i class="bi bi-arrow-up-right"></i>
-                  </div>  
-                  <div class="btn btn__2">
-                    <span><a href="https://github.com/tsantosale/calculadora-salve-natureza">Repositório</a></span>
-                  </div>  
-                </div>
-              </div> 
-          </div>
-        </section>
-        <!--Sobre-->
-        <section id="sobre" class="about section">
-          <div class="about__information1">
-            <img class="about__image" src="./assets/images/profile-photo.png" alt="Foto de perfil">
-            <div class="about__content">
-              <h3>Sobre mim</h3>
-              <p>Alessandra Torres. Curiosa, criativa e multidisciplinar. Sou formada em Gestão, com experiência em marketing e gestão de projetos. Atuei em agências, consultorias e startups, onde desenvolvi um olhar estratégico e colaborativo. Foi na ClassApp, startup de tecnologia, que descobri meu interesse pelo universo tech, o que me motivou a dar um novo passo: mergulhar de vez no desenvolvimento front-end. Hoje, estou em processo de transição e aprendizado contínuo, buscando ampliar minha experiência prática na área.</p>
-              <div class="about__buttons buttons">
-                <div class="btn btn__1">
-                  <span><a href="https://api.whatsapp.com/send?phone=5519993344152&text=Oi%2C%20Alessandra!%20Seu%20portf%C3%B3lio%20%C3%A9%20muito%20legal.%20Vamos%20conversar%3F">Fale comigo</a></span>
-                  <i class="bi bi-arrow-up-right"></i>
-                </div>  
-                <div class="btn btn__2">
-                  <span><a href="curriculo.html">Currículo</a></span>
-                </div>  
-              </div>
-            </div>  
-          </div>  
-
-          <div class="about__information2">
-            <div class="col1">
-              <div class="row1">
-                <h3>Formação</h3>
-                <h4>Gestão</h4>
-                <span>2012 - 2017</span>
-                <div class="about__icons">
-                  <i class="bi bi-bank"></i>
-                  <span>Unicamp</span>
-                </div>
-                <div class="about__icons">
-                  <i class="bi bi-mortarboard"></i>
-                  <span>Pós-graduação - Gestão de projetos</span>
-                </div>
-              </div>
-            
-              <div class="row2">
-                <h3>Experiências</h3>
-                <h4>Gerente de Marketing</h4>
-                <span>Escolas Exponenciais. </br>2022 - 2023</span>
-                <span>Gestão de projetos de marketing e tech:</span>
-                <ul class="about__list">
-                  <li class="about__item item">Planejamento estratégico: cronograma, orçamentos, acompanhamento da equipe;</li>
-                  <li class="about__item item">Decisões baseadas em dados tornando o time mais estratégico e competitivo;</li>
-                  <li class="about__item item">Projetos alinhados às expectativas da diretoria e com maior valor percebido pelos clientes.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col2">
-              <h3>Cursos</h3>
-              <div id="accordion">
-                <!--Item 1 accordion-->
-                <div class="accordion__items active">
-                  <button class="accordion__header start">
-                    <span>MasterMind Lince</span>
-                    <i class="bi bi-caret-down-fill"></i>
-                  </button>
-                  <div class="accordion__body">
-                    <p class="accordion_subtitle">
-                      The Napoleon Hill Foundation. <br>2019.
-                    </p>
-                    <p>
-                      Curso no qual pude desenvolver as competências essenciais para ser uma boa líder.
-                    </p>
-                    <ul class="accordion__list"> 
-                      <li class="accordion__item item">Autoconfiança</li>
-                      <li class="accordion__item item">Inteligência interpessoal</li>
-                      <li class="accordion__item item">Comunicação eficaz</li>
-                    </ul>
-                    </div>
-                </div>
-                <!--Item 2 accordion-->
-                <div class="accordion__items">
-                  <button class="accordion__header">
-                    <span>Formação CSS Web Developer</span>
-                    <i class="bi bi-caret-down-fill"></i>
-                  </button>
-                  <div class="accordion__body">
-                    <p class="accordion_subtitle">
-                      Digital Innovation One. <br>Mar 2025.
-                    </p>
-                    <p>
-                      Neste curso aprofundei meus conhecimentos em CSS, passando pelos fundamentos da linguagem até tópicos avançados.
-                    </p>
-                    <ul class="accordion__list"> 
-                      <li class="accordion__item item">Flexbox e Grid</li>
-                      <li class="accordion__item item">Media Queries</li>
-                      <li class="accordion__item item">Animações</li>
-                      <li class="accordion__item item">frameworks</li>
-                    </ul>
-                    </div>
-                </div>
-                 <!--Item 3 accordion-->
-                 <div class="accordion__items">
-                  <button class="accordion__header">
-                    <span>Desenvolvimento Web com JavaScript</span>
-                    <i class="bi bi-caret-down-fill"></i>
-                  </button>
-                  <div class="accordion__body">
-                    <p class="accordion_subtitle">
-                      Digital Innovation One. <br>Abr 2025.
-                    </p>
-                    <p>
-                      Aqui inciei minha jornada de estudos do JavaScript.
-                    </p>
-                    <ul class="accordion__list"> 
-                      <li class="accordion__item item">Tipos de variáveis</li>
-                      <li class="accordion__item item">Laços de repetição</li>
-                      <li class="accordion__item item">Funções e Arrow function</li>
-                      <li class="accordion__item item">Arrays e funcionalidades ES6</li>
-                    </ul>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>      
-        </section>
-
-        <section id="contato" class="contact">
-          <h2>Fale comigo</h2>
-          <ul class="menu menu__social">
-            <li>
-              <a class="menu__link" href="https://www.linkedin.com/in/alessandra-torres-43661157/" target="_blank">
-                <i class="menu__icon bi bi-linkedin"></i>
-                <span>LinkedIn</span>
-              </a>
+    <section class="projects">
+      <h3>Projetos</h3>
+      <!--Yoga do Dia-->
+      <div class="projects__container">
+        <img class="projects__image" src="./assets/images/yoga-todo-dia.png" />
+        <div class="projects__information">
+          <h4><i class="bi bi-chevron-double-right"></i> Yoga do Dia</h4>
+          <p><i class="bi bi-check2"></i> HTML| CSS | JS</p>
+          <p>
+            Aplicativo web leve e responsivo que sugere uma prática de yoga
+            diária com vídeos do YouTube, ideal para quem passa muitas horas
+            sentado e busca bem-estar físico e mental.
+          </p>
+          <ul class="projects__list">
+            <li class="projects__item item">
+              Estilização com CSS, utilizando layout mobile-first, tons suaves e
+              visual inspirado em aplicativos reais;
             </li>
-            <li>
-              <a class="menu__link" href="https://www.instagram.com/ale.storres/" target="_blank">
-                <i class="menu__icon bi bi-instagram"></i>
-                <span>Instagram</span>
-              </a>
+            <li class="projects__item item">
+              Funcionalidades em JavaScript: exibição dinâmica de frases
+              motivacionais, sorteio de vídeos por canal e controle de telas;
+            </li>
+            <li class="projects__item item">Acesse e confira:</li>
+          </ul>
+        </div>
+        <div class="projects_buttons buttons">
+          <div class="btn btn__1">
+            <span
+              ><a
+                href="https://tsantosale.github.io/yoga-do-dia/"
+                target="_blank"
+                >Prévia</a
+              ></span
+            >
+            <i class="bi bi-arrow-up-right"></i>
+          </div>
+          <div class="btn">
+            <span
+              ><a
+                href="https://github.com/tsantosale/yoga-do-dia"
+                target="_blank"
+                >Repositório</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+      <!--Receitas Preferidas-->
+      <div class="projects__container">
+        <img
+          class="projects__image"
+          src="./assets/images/Mockup-page-receitas-preferidas-desktop.png"
+        />
+        <div class="projects__information">
+          <h4>
+            <i class="bi bi-chevron-double-right"></i> Receitas Preferidas
+          </h4>
+          <p><i class="bi bi-check2"></i> HTML| CSS | JS</p>
+          <p>
+            Uma página estática e bem organizada para apresentar minhas receitas
+            preferidas, com foco em uma navegação simples e visual agradável.
+          </p>
+          <ul class="projects__list">
+            <li class="projects__item item">
+              Estrutura limpa e semântica com HTML5;
+            </li>
+            <li class="projects__item item">
+              Estilização com CSS, incluindo responsividade e desenvolvimento
+              mobile first;
+            </li>
+            <li class="projects__item item">Acesse e confira:</li>
+          </ul>
+        </div>
+        <div class="projects_buttons buttons">
+          <div class="btn btn__1">
+            <span
+              ><a
+                href="https://tsantosale.github.io/receitas-preferidas/"
+                target="_blank"
+                >Prévia</a
+              ></span
+            >
+            <i class="bi bi-arrow-up-right"></i>
+          </div>
+          <div class="btn">
+            <span
+              ><a
+                href="https://github.com/tsantosale/receitas-preferidas"
+                target="_blank"
+                >Repositório</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+      <!--Calculadora Emissões C02-->
+      <div class="projects__container">
+        <img class="projects__image" src="./assets/images/calculadora-3.png" />
+        <div class="projects__information">
+          <h4>
+            <i class="bi bi-chevron-double-right"></i> Calculadora Emissão CO2
+          </h4>
+          <p><i class="bi bi-check2"></i> HTML| CSS | JS</p>
+          <p>
+            Ferramenta interativa que estima a emissão de CO2 associada ao
+            consumo de carne e mostra o impacto positivo de adotar uma
+            alimentação vegana.
+          </p>
+          <ul class="projects__list">
+            <li class="projects__item item">
+              Criatividade na aplicação de dados públicos para comunicar o
+              impacto climático da alimentação;
+            </li>
+            <li class="projects__item item">
+              Layout responsivo e acolhedor com HTML e CSS, pensado para
+              facilitar a compreensão;
+            </li>
+            <li class="projects__item item">
+              Lógica em JavaScript para exibir resultados personalizados com
+              base no consumo informado.
             </li>
           </ul>
-            <div class="btn btn__1">
-              <span class="email"><a href="mailto:tsantos.ale@gmail.com?subject=Contato%20pelo%20portfólio&body=Olá%20Alessandra,">tsantos.ale@gmail.com</a></span>
-            </div>
-        </section>
+        </div>
+        <div class="projects_buttons buttons">
+          <div class="btn btn__1">
+            <span
+              ><a
+                href="https://tsantosale.github.io/calculadora-salve-natureza/"
+                target="_blank"
+                >Prévia</a
+              ></span
+            >
+            <i class="bi bi-arrow-up-right"></i>
+          </div>
+          <div class="btn">
+            <span
+              ><a
+                href="https://github.com/tsantosale/calculadora-salve-natureza"
+                target="_blank"
+                >Repositório</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-    </main>
-  <footer>
-    <p>
-      © 2025. Desenvolvido por Alessandra Torres.</p>
-  </footer>
-  
-  <script src="./assets/js/script.js"></script>
-</body>
+    <section class="curriculum technologies">
+      <h2 class="titleBackgroundColor2">Experiências profssionais</h2>
+      <p class="textDescription">
+        Cada experiência me trouxe uma habilidade que hoje me ajuda a criar
+        soluções que conectam pessoas e tecnologia de um jeito mais humano.
+        Acesse e confira!
+      </p>
+      <a class="btn btn__1">Currículo</a>
+    </section>
+
+    <section class="contact">
+      <h3>Fale comigo</h3>
+      <div class="menuContact">
+        <a
+          href="https://api.whatsapp.com/send?phone=5519993344152&text=Oi%2C%20Alessandra!%20Seu%20portf%C3%B3lio%20%C3%A9%20muito%20legal.%20Vamos%20conversar%3F"
+          ><i class="bi bi-whatsapp"></i
+        ></a>
+        <a href="https://github.com/tsantosale"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/alessandra-torres-43661157/"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+      </div>
+      <div>
+        <p><i class="bi bi-envelope"></i> tsantos.ale@gmail.com</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025. Desenvolvido por Alessandra Torres.</p>
+    </footer>
+  </body>
 </html>
